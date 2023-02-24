@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Header />
         <Routes>
-          <Route path="/" element={<Header />}>
-            {/* <Header /> */}
-            <Route path="product" element={<ProductListing />} />
-            <Route>404 NOT FOUND!</Route>
-          </Route>
+          {/* <Route path="/" element={<Header />}> */}
+          <Route path="/product" element={<ProductListing />} />
+          <Route>404 NOT FOUND!</Route>
+          {/* </Route> */}
         </Routes>
       </BrowserRouter>
     </div>
