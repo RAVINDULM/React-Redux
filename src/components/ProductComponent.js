@@ -8,7 +8,7 @@ function ProductComponent() {
     const { id, title, image, price, category } = product;
     console.log(product.id);
     return (
-      <div className="four column wide">
+      <div className="four wide column">
         <div className="ui link cards" key={id}>
           <div className="card">
             <div className="image">
@@ -16,8 +16,8 @@ function ProductComponent() {
             </div>
             <div className="content">
               <div className="header">{title}</div>
-              <div className="header">$ {price}</div>
-              <div className="header">{category}</div>
+              <div className="meta price">$ {price}</div>
+              <div className="meta">{category}</div>
             </div>
           </div>
         </div>
