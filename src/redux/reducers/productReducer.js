@@ -1,6 +1,6 @@
 import { ActionTypes } from "../constants/Actions_type";
 
-const initials = {
+const initialstate = {
   product: [
     {
       id: 1,
@@ -9,7 +9,7 @@ const initials = {
     },
   ],
 };
-export const ProductReducer = (state = initials, { type, payload }) => {
+export const ProductReducer = (state = initialstate, { type, payload }) => {
   switch (type) {
     case ActionTypes.SETPRODUCTS:
       return state;
