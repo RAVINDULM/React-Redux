@@ -11,3 +11,15 @@ export const ProductReducer = (state = initialstate, { type, payload }) => {
       return state;
   }
 };
+
+export const selectedProductsReducer = (state = {}, { type, payload }) => {
+  console.log(type);
+  switch (type) {
+    case ActionTypes.SELECTEDPRODUCT:
+      return { ...state, ...payload };
+    case ActionTypes.REMOVEPRODUCT:
+      return {};
+    default:
+      return state;
+  }
+};
